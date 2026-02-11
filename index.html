@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Vinyl</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+
+<div class="container">
+
+  <h1 class="brand">VINYL.</h1>
+  <p class="subtitle">Gestiona tu tienda de discos con precisión analógica</p>
+
+  <div class="login-card">
+
+    <form id="loginForm">
+
+      <label>Email de acceso</label>
+      <input type="email" id="email" placeholder="admin@vinyl-store.com" required>
+
+      <label>Contraseña</label>
+      <input type="password" id="password" required>
+
+      <button type="submit" class="btn-login">INICIAR SESIÓN</button>
+
+    </form>
+
+    <p class="divider">O entrar con</p>
+
+    <button id="googleBtn" class="btn-google">
+  <img 
+    src="https://developers.google.com/identity/images/g-logo.png"
+    alt="Google"
+    class="google-icon"
+    
+  >
+  <span>Sign in with Google</span>
+</button>
+
+
+
+    <p id="mensaje"></p>
+
+  </div>
+
+</div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

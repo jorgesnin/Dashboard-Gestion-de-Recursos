@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VINYL | Dashboard</title>
+  <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- aside-->
+  <aside class="sidebar">
+    <h2>VINYL.</h2>
+    <nav>
+      <ul class="menu">
+  <li><a href="#">Dashboard</a></li>
+  <li><a href="#">Inventario</a></li>
+</ul>
+
+    </nav>
+    <a href="index.html" class="btn-salir">Cerrar Sesión</a>
+    
+  </aside>
+
+
+ 
+  <main class="main">
+    <section class="metrics">
+      <div class="metric">
+        <h3>Total Vinilos</h3>
+        <p id="totalVinilos">0</p>
+      </div>
+      <div class="metric">
+        <h3>Stock Total</h3>
+        <p id="stockTotal">0</p>
+      </div>
+      <div class="metric">
+        <h3>Vinilos Activos</h3>
+        <p id="vinilosActivos">0</p>
+      </div>
+    </section>
+
+  
+    <section class="form-section">
+      <h2>Agregar vinilo</h2>
+      <form id="vinylForm">
+        <input type="text" id="title" placeholder="Nombre del disco" required>
+        <input type="text" id="artist" placeholder="Artista" required>
+        <input type="number" id="stock" placeholder="Stock" required>
+        <button type="submit">Agregar</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+ 
+    <section class="table-section">
+      <h2>Inventario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Disco</th>
+            <th>Artista</th>
+            <th>Stock</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="vinylTable"></tbody>
+      </table>
+      <p id="errorMessage"></p>
+    </section>
+
+  </main>
+</div>
+
+<script src="./js/app2.js"></script>
+</body>
+</html>
+
