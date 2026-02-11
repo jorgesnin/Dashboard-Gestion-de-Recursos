@@ -17,7 +17,7 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-document.getElementById('googleBtn').addEventListener('click', function() {
-    window.location.href = 'index2.html';
-  });
+document.querySelector('#googleBtn').addEventListener('click', function() {
+  window.location.href = 'index2.html';
+});
 
